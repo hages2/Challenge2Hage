@@ -1,0 +1,101 @@
+:root {
+    --primary-color: #3a3a3b;
+    --secondary-color:#218991;
+    --tertiary-color: #1e2230;
+    --fourth-color: #cfcfcf;
+}
+
+* {
+    margin: 0;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--tertiary-color);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--fourth-color);
+}
+
+/*header styles*/
+header {
+    padding: 20px 35px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 36px;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: 0;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+
+header nav ul li a {
+    padding: 10px 15px;
+    color:var(--secondary-color);
+    font-weight: lighter;
+    font-size: 1.55vw;
+}
+
+/*hero section*/
+
+/*About me, work, contact sections*/
+.section-title {
+    font-weight: bold;
+    font-size: 28px;
+    color: var(--tertiary-color);
+    margin: 0;
+    text-align: left;
+    width: 50%;
+}
+
+.side-section {
+    font-weight: lighter;
+    font-size: 24px;
+    color: var(--tertiary-color);
+    margin: 0;
+    text-align: right;
+    width: 60%;
+}
+/*About me section*/
+
+/*Work section*/
+.big-box {
+    height: 50px;
+    width: 100px;
+}
+
+.box {
+    height: 20px;
+    width: 100px;
+}
+
+/*Contact section*/
+.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
