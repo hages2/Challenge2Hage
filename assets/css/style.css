@@ -1,32 +1,33 @@
 :root {
     --primary-color: #3a3a3b;
-    --secondary-color:#218991;
+    --secondary-color:#C3DEE7;
     --tertiary-color: #1e2230;
     --fourth-color: #cfcfcf;
 }
 
-* {
+/** {
     margin: 0;
     padding: 20px;
     box-sizing: border-box;
 }
+*/
 
 body {
     color: var(--tertiary-color);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     background-color: var(--fourth-color);
+    padding: 20px;
+    margin:0;
 }
 
 /*header styles*/
 header {
-    padding: 20px 35px;
+    padding: 10px 15px;
     background-color: var(--primary-color);
     color: var(--secondary-color);
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    position: sticky;
-    position: -webkit-sticky;
     top: 0;
 }
 
@@ -35,7 +36,13 @@ header h1 {
     font-size: 36px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
-    margin: 0;
+    margin: auto 0;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+  line-height: 50px;
+  text-align: right;
+  width: 400px;
 }
 
 header nav {
@@ -59,36 +66,90 @@ header nav ul li a {
 }
 
 /*hero section*/
+.hero {
+    height: 200px;
+    background-image: url("../pills.jpg");
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    text-align: right;
+    margin-bottom: 20px;  
+}
+
+.hero span {
+    color: var(--primary-color);
+    font-weight: bold;
+    font-size: 32px;
+    margin: auto 0;
+    line-height: 200px;
+}
+
 
 /*About me, work, contact sections*/
 .section-title {
     font-weight: bold;
     font-size: 28px;
     color: var(--tertiary-color);
-    margin: 0;
-    text-align: left;
-    width: 50%;
+    margin: 15px;
+    text-align: right;
+    flex: 1 20%;
+    padding-right: 20px;
+    border-right: var(--tertiary-color);
+    border-right: solid;
+
 }
 
 .side-section {
     font-weight: lighter;
-    font-size: 24px;
+    font-size: 16px;
     color: var(--tertiary-color);
     margin: 0;
-    text-align: right;
-    width: 60%;
+    text-align: left;
+    flex: 2 80%;
+    padding-left: 20px;
 }
 /*About me section*/
+#about-me {
+    display: flex;
+    height: 100px;
+}
 
+#about-me .side-section {
+    display: flex
+}
+#about-me h2 {
+    line-height: 100px;
+
+}
 /*Work section*/
+#work {
+    margin-top: 10px;
+    display: flex;
+}
+
+#work .side-section {
+    display: flex;
+    flex-wrap: wrap;
+    flex: space-between;
+}
+
 .big-box {
-    height: 50px;
-    width: 100px;
+    height: 50%;
+    width: 100%;
+    flex: 2 100%;
+    background-image: url(../Hero.jpeg);
 }
 
 .box {
-    height: 20px;
-    width: 100px;
+    height: 25%;
+    width: 50%;
+    flex: 1 50%;
+    background-image: url(../keyboard.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    text-align: left;
+    margin-bottom: 20px;  
 }
 
 /*Contact section*/
