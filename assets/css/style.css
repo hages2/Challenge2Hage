@@ -1,6 +1,6 @@
 :root {
     --primary-color: #3a3a3b;
-    --secondary-color:#C3DEE7;
+    --secondary-color:#add2e9;
     --tertiary-color: #1e2230;
     --fourth-color: #cfcfcf;
 }
@@ -33,7 +33,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 36px;
+    font-size: 3vw;
     color: var(--primary-color);
     background-color: var(--secondary-color);
     margin: auto 0;
@@ -79,7 +79,7 @@ header nav ul li a {
 .hero span {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 32px;
+    font-size: 2.4vw;
     margin: auto 0;
     line-height: 200px;
 }
@@ -88,7 +88,7 @@ header nav ul li a {
 /*About me, work, contact sections*/
 .section-title {
     font-weight: bold;
-    font-size: 28px;
+    font-size: 2vw;
     color: var(--tertiary-color);
     margin: 15px;
     text-align: right;
@@ -96,12 +96,11 @@ header nav ul li a {
     padding-right: 20px;
     border-right: var(--tertiary-color);
     border-right: solid;
-
 }
 
 .side-section {
     font-weight: lighter;
-    font-size: 16px;
+    font-size: 1.2vw;
     color: var(--tertiary-color);
     margin: 0;
     text-align: left;
@@ -115,8 +114,13 @@ header nav ul li a {
 }
 
 #about-me .side-section {
-    display: flex
+    display: flex;
 }
+
+#about-me .side-section img {
+    margin-right: 10px;
+}
+
 #about-me h2 {
     line-height: 100px;
 
@@ -130,33 +134,97 @@ header nav ul li a {
 #work .side-section {
     display: flex;
     flex-wrap: wrap;
-    flex: space-between;
+    justify-content: space-between;
+    padding: 15px;
 }
 
+
 .big-box {
-    height: 50%;
+    height: 300px;
     width: 100%;
     flex: 2 100%;
     background-image: url(../Hero.jpeg);
+    border-style: solid;
+    border-width: thick;
+    border-color: var(--secondary-color);
+    margin-bottom: 10px;
+    opacity: 80%;
+}
+
+.big-box:hover {
+    cursor:pointer;
+    opacity: 100%;
 }
 
 .box {
-    height: 25%;
-    width: 50%;
-    flex: 1 50%;
+    height: 100px;
+    flex: 1 40%;
     background-image: url(../keyboard.jpg);
     background-size:cover;
     background-attachment: fixed;
     background-position: 80%;
     text-align: left;
-    margin-bottom: 20px;  
+    margin-bottom: 10px;  
+    border-style: solid;
+    border-width: thick;
+    border-color: var(--secondary-color);
+    opacity:80%;
 }
 
+.box:hover {
+    cursor:pointer;
+    opacity: 100%;
+}
+
+.box-left {
+    margin-right: 10px;
+}
+
+.box-text {
+    font-weight: bold;
+    font-size: 1.1vw;
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
+    margin: auto 0;
+    display: inline-block;
+    vertical-align: middle;
+    height: 50px;
+  text-align: center;
+  width: 150px;
+}
+
+.box-text span {
+    font-size: 0.8vw;
+}
+
+
 /*Contact section*/
+#contact-me{
+    margin-top: 10px;
+    display: flex;
+}
+
+#contact-me .side-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 15px;
+}
+
 .contact-info ul {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     list-style: none;
+    font-weight: bold;
+    color:var(--tertiary-color);
+}
+
+.contact-info ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 1.2vw;
+    color:var(--tertiary-color);
+    font-weight: bold;
 }
