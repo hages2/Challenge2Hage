@@ -33,7 +33,7 @@ header {
 
 header h1 {
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 38px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
     margin: auto 0;
@@ -62,7 +62,7 @@ header nav ul li a {
     padding: 10px 15px;
     color:var(--secondary-color);
     font-weight: lighter;
-    font-size: 1.55vw;
+    font-size: 30px;
 }
 
 /*hero section*/
@@ -79,7 +79,7 @@ header nav ul li a {
 .hero span {
     color: var(--primary-color);
     font-weight: bold;
-    font-size: 2.4vw;
+    font-size: 28px;
     margin: auto 0;
     line-height: 200px;
 }
@@ -88,7 +88,7 @@ header nav ul li a {
 /*About me, work, contact sections*/
 .section-title {
     font-weight: bold;
-    font-size: 2vw;
+    font-size: 30px;
     color: var(--tertiary-color);
     margin: 15px;
     text-align: right;
@@ -100,7 +100,7 @@ header nav ul li a {
 
 .side-section {
     font-weight: lighter;
-    font-size: 1.2vw;
+    font-size: 18px;
     color: var(--tertiary-color);
     margin: 0;
     text-align: left;
@@ -182,7 +182,7 @@ header nav ul li a {
 
 .box-text {
     font-weight: bold;
-    font-size: 1.1vw;
+    font-size: 18px;
     color: var(--primary-color);
     background-color: var(--secondary-color);
     margin: auto 0;
@@ -194,7 +194,7 @@ header nav ul li a {
 }
 
 .box-text span {
-    font-size: 0.8vw;
+    font-size: 14px;
 }
 
 
@@ -219,12 +219,13 @@ header nav ul li a {
     list-style: none;
     font-weight: bold;
     color:var(--tertiary-color);
+    font-size: 24px;
 }
 
 .contact-info ul li a {
     padding: 10px 15px;
     font-weight: lighter;
-    font-size: 1.2vw;
+    font-size: 24px;
     color:var(--tertiary-color);
     font-weight: bold;
 }
