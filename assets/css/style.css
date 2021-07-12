@@ -151,6 +151,10 @@ header nav ul li a {
     opacity: 80%;
 }
 
+#project-1 {
+    background-image: url(../bar-background.jpg)
+}
+
 .big-box:hover {
     cursor:pointer;
     opacity: 100%;
@@ -191,6 +195,10 @@ header nav ul li a {
     height: 50px;
   text-align: center;
   width: 150px;
+}
+
+#long-box {
+    width: 300px;
 }
 
 .box-text span {
